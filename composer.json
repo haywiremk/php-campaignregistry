@@ -1,0 +1,41 @@
+{
+  "name": "haywiremk/php-campaignregistry",
+  "description": "",
+  "keywords": [
+    "campaignregistry",
+    "swagger",
+    "php",
+    "sdk",
+    "api"
+  ],
+  "homepage": "https://csp-api.campaignregistry.com/v1/openapi.json",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Swagger Codegen of TCR openapi JSON",
+      "homepage": "https://github.com/swagger-api/swagger-codegen"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8",
+    "squizlabs/php_codesniffer": "~2.6",
+    "friendsofphp/php-cs-fixer": "~1.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "TCR\\Client\\": "lib/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TCR\\Client\\": "test/"
+    }
+  }
+}
